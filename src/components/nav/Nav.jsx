@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './nav.css';
+
 import Logo from '../../assests/iitkgplogo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -16,7 +17,7 @@ const Nav = () => {
         <h2> Metallurgical and Materials Engineering Department </h2>
       </div>
       <div className={showLinks ? "links active" : "links"}>
-        <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
+        <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} >
           Home
         </a>
         <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
