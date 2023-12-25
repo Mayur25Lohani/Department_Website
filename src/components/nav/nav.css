@@ -18,7 +18,11 @@ nav {
   .name h2 {
     margin: 0;
     font-size: 1.2rem;
+    /* margin-right: 1rem; */
   }
+  /* .name{
+    margin-right: 1rem;
+  } */
   
   .links {
     display: flex;
@@ -34,15 +38,54 @@ nav {
     text-decoration: none;
   }
   
-  .links a:hover {
+  /* .links a:hover {
     background: rgba(0, 0, 0, 0.3);
+  } */
+
+  /* HOVER EFFECT NAVBAR */
+
+  .links a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    
+  }
+
+  /* Hover Effect Start  */
+  
+  .links a:after{
+    content: "";
+    display: block;
+    height: 4px;
+    left: 10%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    border-radius: 6px;
   }
   
-  .links a.active {
-    background: var(--color-primary);
-    color: var(--color-bg);
+  .links a:hover:after { 
+    width: 90%; 
+    left: 10%;
+    background-color:var(--color-primary);
   }
+  .links a.active{
+    color:var(--color-primary);
+    font-weight: bolder;
+    text-shadow: 0 .8px 9px rgb(170, 168, 152);
+    &::after{
+      /* width: 90%; */
+      /* left:10%; */
+      background-color:var(--color-primary);
+
+    }
+  }
+   /* Hover Effect Ends  */
   
+ 
+
+
   .hamburger-menu {
     display: none;
     grid-column: 4/5;
@@ -73,6 +116,7 @@ nav {
   
     .hamburger-menu {
       display: block;
+      margin-right: 8px;
     }
   
     .links.active {
@@ -80,25 +124,42 @@ nav {
       flex-direction: column;
       align-items: flex-start;
       position: absolute;
-      top: 70px;
-      width: 100%;
+      top: 72px;
+      width: 10rem;
+      height: calc(100vh - 70px);
+      right: 0;
       background: rgba(0, 0, 0, 0.7);
+      transition: all 0.3s ease;
+      text-align: center;
     }
   
     .links.active a {
-      width: 100%;
+      width: 90%;
       margin: 0;
     }
   
     .hamburger-menu a.active {
       background: var(--color-primary);
       color: var(--color-bg);
+      opacity: 0.6;
     }
   }
 
   @media screen and (max-width: 358px) {
     .links.active {
       top: 100px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 558px) {
+    .links.active{
+        top: 77px;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .links.active{
+        top: 104px;
     }
   }
   

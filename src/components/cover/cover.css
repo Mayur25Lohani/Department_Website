@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Gajraj+One&family=Poppins:ital,wght@0,900;1,500&family=Rubik+Doodle+Shadow&display=swap');
+
+.cover{
+    width: 100vw;
+    margin-top: 0;;
+    height: calc(98vh - 70px);
+    
+}
+.section-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: url('../../assests/coverpage/1.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: changephoto 16s ease 1s infinite;
+    position: relative;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* Curve shape Start  */
+
+.custom-shape-divider-bottom-1703144822 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1703144822 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 137px;
+}
+
+.custom-shape-divider-bottom-1703144822 .shape-fill {
+    fill: var(--color-bg);
+}
+
+/* Curve Shape Ends  */
+
+/* --------------------------------------------------------------------------- */
+
+
+/* Department Content Start  */
+.dep-info{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.dep-content{
+    width: 40%;
+    margin: auto;
+    padding: .7rem 2.3rem;
+    padding-top: 1rem;
+    border-radius: 5px;
+    background-color:#c7d18a96;
+    overflow-y: auto;
+    max-height: 23rem;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    text-align: start;
+    min-width: 300px;
+    backdrop-filter: blur(7);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* cursor: pointer; */
+}
+
+::selection {
+    color: #e3bd99;
+    background: #604022;
+    text-decoration: underline;
+    text-shadow: none;
+  }
+
+.know-dep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 300px;
+    margin: auto;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.know-dep h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: Rubik+Doodle+Shadow;
+    letter-spacing: 1.3px;
+    word-spacing: 1.8px;
+    border-radius: 10px;
+    background-image: url("../../assests/coverpage/2.webp") ;
+    background-size: contain;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: changetxt 16s ease 1s infinite;
+}
+
+/* .show-btn{
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 8rem;
+    transition: all .4s ease;
+    
+}
+.show-btn:hover{
+    scale: 1.1;
+} */
+
+                                     /* Responsive CSS  */
+
+@media (width <= 585px){
+    .know-dep{
+        margin-bottom: 1.5rem;
+    }
+    .custom-shape-divider-bottom-1703144822 svg{
+        height: 100px;
+        width: 160%;
+    }
+    .dep-content{
+        max-height: 18rem;
+    }
+    .know-dep h1{
+        font-size: 2.7rem;
+    }
+    .know-dep{
+        width: 30%;
+    }
+}
+@media (width <= 400px){
+    .dep-content{
+        width: 20%;
+        text-align: center;
+        min-width: 260px;
+
+    }
+}
+
+                                /* Responsive CSS Ends */
+
+
+                                /* Animation Start */
+
+@keyframes changephoto{
+    25%   {background-image:url('../../assests/coverpage/2.webp')}
+    50%  {background-image:url('../../assests/coverpage/3.webp')}
+    75% {background-image:url('../../assests/coverpage/4.webp')}
+    100% {background-image:url('../../assests/coverpage/1.webp')}
+}
+@keyframes changetxt{
+    25%   {background-image:url('../../assests/coverpage/2.webp')}
+    50%  {background-image:url('../../assests/coverpage/4.webp')}
+    75% {background-image:url('../../assests/coverpage/1.webp')}
+    100% {background-image:url('../../assests/coverpage/3.webp')}
+}
+/* Animation Ends  */
+
+
+
+
+
+  
