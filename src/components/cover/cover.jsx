@@ -5,7 +5,7 @@ import './cover.css';
 const Cover = () =>{
 return(
     <>
-    <section className="cover">
+    <section className="cover" id="about">
         <div className="section-imgs">
             
             <div className="custom-shape-divider-bottom-1703144822">
