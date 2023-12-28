@@ -73,7 +73,7 @@ nav {
   .links a.active{
     color:var(--color-primary);
     font-weight: bolder;
-    text-shadow: 0 .8px 9px rgb(170, 168, 152);
+    /* text-shadow: 0 .8px 9px rgb(170, 168, 152); */
     &::after{
       /* width: 90%; */
       /* left:10%; */

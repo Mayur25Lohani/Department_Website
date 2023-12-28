@@ -39,7 +39,7 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 137px;
+    height: 138px;
 }
 
 .custom-shape-divider-bottom-1703144822 .shape-fill {
@@ -77,12 +77,19 @@
     backdrop-filter: blur(7);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     /* cursor: pointer; */
+    position: relative;
+    height: 100vh;
+}
+.show-content{
+    position: absolute;
+    height: 90%;
+    overflow: scroll;
 }
 
 ::selection {
     color: #e3bd99;
     background: #604022;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-shadow: none;
   }
 
@@ -144,13 +151,16 @@
     .know-dep{
         width: 30%;
     }
+    
 }
 @media (width <= 400px){
     .dep-content{
         width: 20%;
         text-align: center;
         min-width: 260px;
-
+    }
+    .show-content{
+        left: 0;
     }
 }
 
