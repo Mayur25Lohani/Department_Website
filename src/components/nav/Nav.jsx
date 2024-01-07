@@ -18,16 +18,16 @@ const Nav = () => {
       </div>
       <div className={showLinks ? "links active" : "links"}>
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} >
-          Home
-        </a>
-        <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>
           About
         </a>
-        <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}>
+        <a href="#professors" onClick={() => setActiveNav('#professors')} className={activeNav === '#about' ? 'active' : ''}>
           Professors
         </a>
-        <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}>
-          Opportunities
+        <a href="#resources" onClick={() => setActiveNav('#resources')} className={activeNav === '#experience' ? 'active' : ''}>
+          Resources
+        </a>
+        <a href="#sme" onClick={() => setActiveNav('#sme')} className={activeNav === '#services' ? 'active' : ''}>
+          SME
         </a>
         <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
           Contact
