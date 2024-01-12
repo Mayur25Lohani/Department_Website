@@ -13,7 +13,7 @@ const Hod = () =>{
                 <h1>Message from HOD</h1>
             </div>
             <div className="hod-info">
-                <div className="card">
+                <div className="hodcard">
                     <div className="hod-img">
                         <img src={hod} alt="" />
                     </div>

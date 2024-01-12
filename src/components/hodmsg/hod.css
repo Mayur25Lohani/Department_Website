@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.card{
+.hodcard{
     border: 1px solid black;
     padding: 5px;
     min-width: 18rem;
@@ -34,7 +34,7 @@
 
 }
 
-.card::after{
+.hodcard::after{
     content: "Head of Department";
     position: absolute;
     top: -100px;
@@ -74,11 +74,11 @@
     width: 80%;
     transition: all .8s ease ;
 }
-.card:hover .hod-img{  
+.hodcard:hover .hod-img{  
     box-shadow: 0 0 0 15rem rgb(5, 78, 188);
     border: 20px solid rgb(72, 75, 240)
 }
-.card:hover{
+.hodcard:hover{
     height: 430px;
     & .hod-cnt{
         bottom: 0;

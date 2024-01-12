@@ -1,0 +1,31 @@
+.profs-card{
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(243, 240, 244);
+    color: black;
+}
+.profs-card:hover{
+    box-shadow: 1px 1px 8px 8px rgb(136, 146, 166);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImg{
+    height: 200px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title{
+    color: rgb(28, 8, 81);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 5px
+}
