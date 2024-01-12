@@ -1,0 +1,190 @@
+.hod-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.hod-info{
+    display: flex;
+    gap: 3rem;
+    margin: 10px;
+    margin-top: 4rem;
+}
+
+.heading{
+    text-align: center;
+}
+
+.card{
+    border: 1px solid black;
+    padding: 5px;
+    min-width: 18rem;
+    max-width: 292px;
+    height: 357px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255 255 255 / 56%);
+    box-shadow: 3px 3px 10px black;
+    transition: all .8s ease ;
+
+}
+
+.card::after{
+    content: "Head of Department";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all .8s ease ;
+
+}
+.hod-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(72, 75, 240);
+    bottom: 0;
+    height: 110px;
+    bottom: -100%;
+    /* line-height: 5px; */
+    transition: all .8s ease ;
+    color: white !important;
+}
+
+
+.hod-img{
+    border-radius: 50%;
+    border: 8px solid rgb(73 74 109);
+    
+    position: absolute;
+    top: 40px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    width: 80%;
+    transition: all .8s ease ;
+}
+.card:hover .hod-img{  
+    box-shadow: 0 0 0 15rem rgb(5, 78, 188);
+    border: 20px solid rgb(72, 75, 240)
+}
+.card:hover{
+    height: 430px;
+    & .hod-cnt{
+        bottom: 0;
+    }
+    &::after{
+        top: 0;
+    }
+}
+
+.hod-name{
+    position: absolute;
+    top: 282px;
+    font-weight: 600;
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2.5rem;
+    box-shadow: -3px 3px 10px black;
+    background-color: rgb(81 62 24 / 89%);
+    text-align: left;
+}
+
+
+
+                                /* --------------RESPONSIVE--------------- */
+
+@media (width < 1150px){
+    .hod-info{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (width < 538px){
+    .msg p{
+        max-height: 652px;
+        overflow: scroll;
+        padding-top:10px ;
+        ::-webkit-scrollbar {
+            display: block !important;
+          }
+    }
+}
+
+@media (width > 1159px){
+    .msg{
+        width: 790px;
+        /* max-height: 390px; */
+    }
+    .hod-info{
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+}
+
+                                       /* BUTTON  */
+
+
+
+.button-30 {
+    
+    bottom: -10px;
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 1.7rem;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }

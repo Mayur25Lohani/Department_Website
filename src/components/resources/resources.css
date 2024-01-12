@@ -17,6 +17,7 @@
   transition: var(--transition);
 }
 
+
 .resources__item:hover {
   border-color: var(--color-primary-varient);
   background: transparent;

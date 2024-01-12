@@ -32,6 +32,7 @@ const Nav = () => {
         <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
           Contact
         </a>
+        
       </div>
       <div className="hamburger-menu">
         <a href="#" onClick={() => setShowLinks(!showLinks)}>

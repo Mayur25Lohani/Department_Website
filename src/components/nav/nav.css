@@ -77,12 +77,11 @@ nav {
     color:var(--color-primary);
     font-weight: bolder;
     /* text-shadow: 0 .8px 9px var(--color-light); */
-    &::after{
+    /* &::after{ */
       /* width: 90%; */
       /* left:10%; */
-      background-color:var(--color-primary);
-
-    }
+      /* background-color:var(--color-primary); */
+    /* } */
   }
    /* Hover Effect Ends  */
   

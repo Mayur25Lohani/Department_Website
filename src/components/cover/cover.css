@@ -68,22 +68,34 @@
     padding-top: 1rem;
     border-radius: 5px;
     background-color:#c7d18a96;
-    overflow-y: auto;
     max-height: 23rem;
     color: black;
     font-weight: 600;
     letter-spacing: 1.1px;
     text-align: start;
     min-width: 300px;
+    overflow: hidden;
     backdrop-filter: blur(7);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     /* cursor: pointer; */
+}
+.show-content{
+    text-align: left;
+    & p{
+        font-size: 15px;
+        padding-top:10px ;
+        padding-bottom: 10px;
+        max-height: 23rem;
+        overflow: scroll;
+
+
+    }
 }
 
 ::selection {
     color: #e3bd99;
     background: #604022;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-shadow: none;
   }
 
