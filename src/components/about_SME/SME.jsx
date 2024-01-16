@@ -8,7 +8,7 @@ const SME = ()=>{
     
     return(
         <>
-            <section className="sme " id="sme">
+            <section className="sme ">
                 <div className="sme-header">
                      <img src={sme} alt="sme_logo" />
                     <div className="sme-heading ">

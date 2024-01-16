@@ -16,12 +16,6 @@
     }
 
 }
-/* .sme-heading::after{
-    content: 'Society of Metallurgical and Materials Engineers';
-    position: absolute;
-    bottom: 0;
-    font-size: 2.5rem;
-} */
 
 .sme-info{
     display: flex;
