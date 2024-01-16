@@ -101,7 +101,7 @@
     border-radius: 5px;
     padding: 2.5rem;
     box-shadow: -3px 3px 10px black;
-    background-color: rgb(81 62 24 / 89%);
+    background-color:var(--para-bg);
     text-align: left;
 }
 
@@ -115,13 +115,28 @@
         align-items: center;
     }
 }
-@media (width < 538px){
+@media (width < 600px){
     .msg p{
-        max-height: 652px;
-        overflow: scroll;
+        max-height: 600px;
+        overflow-y: scroll;
         padding-top:10px ;
-        ::-webkit-scrollbar {
-            display: block !important;
+        &::-webkit-scrollbar {
+            width: 3px;
+            margin-left: 10px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: rgba(189, 183, 183, 0.659);
+            border-radius:10px ;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+              border-radius:10px ;
+            background: #2f2c27;
+          }
+          
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555;
           }
     }
 }

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -17,6 +20,7 @@
   --color-primary-variant: #c89666;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
+  --para-bg: rgb(81 62 24 / 89%);
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -28,8 +32,8 @@
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-  display: none;
+html::-webkit-scrollbar{
+  display: none !important;
 }
 
 body {
