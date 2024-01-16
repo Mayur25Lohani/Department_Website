@@ -24,9 +24,9 @@ const Hod = () =>{
                         </p>
                     </div>
                     <div className="hod-cnt">
-                    <p><i class="fa-solid fa-phone"></i> :  +91-3222-283290</p>
-                            <p><a href="mailto: sbs22@metal.iitkgp.ac.in" target='__blank'><i class="fa-solid fa-envelope"></i> : sbs22@metal.iitkgp.ac.in</a></p>
-                            <button class="button-30" role="button"><a href="https://www.iitkgp.ac.in/department/MT/faculty/mt-sbs22" target='__blank'>Know More</a></button>
+                    <p><i className="fa-solid fa-phone"></i> :  +91-3222-283290</p>
+                            <p><a href="mailto: sbs22@metal.iitkgp.ac.in" target='__blank'><i className="fa-solid fa-envelope"></i> : sbs22@metal.iitkgp.ac.in</a></p>
+                            <button className="button-30" role="button"><a href="https://www.iitkgp.ac.in/department/MT/faculty/mt-sbs22" target='__blank'>Know More</a></button>
                     </div>
                 </div>
                 <div className="msg" id="hod-msg">

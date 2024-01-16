@@ -6,7 +6,8 @@ import Resources from './components/resources/Resources'
 import Contact from './components/contact/Contact'
 import Hod from './components/hodmsg/hod'
 
-// import Profs from './components/professor/Profs'
+import Profs from './components/professor/Profs'
+
 import SME from './components/about_SME/SME'
 
 
@@ -17,7 +18,8 @@ const App = () => {
     <Cover/>
     <Hod/>
     <SME/>
-    {/* <Profs/> */}
+    <Profs/>
+
     <Resources />
     <Contact />
     <Footer />
