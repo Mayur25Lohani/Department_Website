@@ -11,12 +11,14 @@ const Nav = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={Logo} alt="Logo" />
+        <a href="#">
+          <img src={Logo} alt="Logo" />
+        </a>
       </div>
       <div className="name">
         <h2> Metallurgical and Materials Engineering Department </h2>
       </div>
-      <div className={showLinks ? "links active" : "links"}>
+      <div className={showLinks ? "links active" : "links"} id='links'>
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} >
           About
         </a>
@@ -35,12 +37,13 @@ const Nav = () => {
         
       </div>
       <div className="hamburger-menu">
-        <a href="#" onClick={() => setShowLinks(!showLinks)}>
+        <a onClick={() => setShowLinks(!showLinks)} style={{cursor:'pointer'}}>
           <GiHamburgerMenu />
         </a>
       </div>
     </nav>
   );
 };
+
 
 export default Nav;
