@@ -32,10 +32,14 @@ html {
 html::-webkit-scrollbar{
   display: none !important;
 }
+::-webkit-scrollbar{
+  display: none !important;
+}
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
+  background: rgb(25, 24, 24);
   color: var(--color-white);
   line-height: 1.7;
   /* background-image: url(../src/assests/bgimg.png); */

@@ -66,7 +66,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form method="post" onSubmit={handleSubmit}>
+        <form method="post" onSubmit={handleSubmit} id="query_form">
           <input
             type="text"
             name="name"
@@ -99,7 +99,7 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" value="send message">
             Send Message
           </button>
         </form>
@@ -107,5 +107,12 @@ const Contact = () => {
     </section>
   );
 };
+// document.getElementById('query_form').addEventListener('submit', function(event) {
+//   event.preventDefault();
+//   var formData = new FormData(event.target);
+//   google.script.run.withSuccessHandler(function() {
+//     alert('Form submitted successfully!');
+//   }).postForm(formData);
+// });
 
 export default Contact;
