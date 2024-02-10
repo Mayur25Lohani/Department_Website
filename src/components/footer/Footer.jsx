@@ -40,16 +40,16 @@ const Footer = () => {
                 <a className="effect" href="#">About</a>
               </li>
               <li>
-                <a className="effect" href="#">Professors</a>
+                <a className="effect" href="#sme">SME</a>
               </li>
               <li>
-                <a className="effect" href="#">Resources</a>
+                <a className="effect" href="#professors">Professors</a>
               </li>
               <li>
-                <a className="effect" href="#">SME</a>
+                <a className="effect" href="#resources">Resources</a>
               </li>
               <li>
-                <a className="effect" href="#">Contact</a>
+                <a className="effect" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -59,10 +59,10 @@ const Footer = () => {
               Society of Metallurgical Engineers
               <br />
               IIT Kharagpur
+              {/* <br />
+              +1 (555) 555-5555 */}
               <br />
-              +1 (555) 555-5555
-              <br />
-              <a className="effect" href="mailto:info@example.com">info@example.com</a>
+              <a className="effect" href="mailto:sme.info.iitkgp@gmail.com">sme.info.iitkgp@gmail.com</a>
             </p>
             <div className="footer__socials">
               <a href="https://www.facebook.com/profile.php?id=100075318804727">

@@ -5,7 +5,7 @@ import Footer from './components/footer/Footer'
 import Resources from './components/resources/Resources'
 import Contact from './components/contact/Contact'
 import Hod from './components/hodmsg/hod'
-import Professor from './components/Professor/Professor'
+import Professor from './components/professor/professor'
 
 
 import SME from './components/about_SME/SME'

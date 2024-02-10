@@ -124,6 +124,9 @@
                                 /* --------------RESPONSIVE--------------- */
 
 @media (width < 1150px){
+    .hod{
+        margin-top: 15rem;
+    }
     .hod-info{
         flex-direction: column;
         align-items: center;
@@ -132,6 +135,17 @@
     .msg{
         padding: 0;
         padding-bottom: 2rem;
+    }
+}
+@media (width<933px){
+    .hod{
+        margin-top: 18rem;
+    }
+}
+
+@media (width<651px){
+    .hod{
+        margin-top: 21rem;
     }
 }
 @media (width < 600px){
