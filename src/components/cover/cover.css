@@ -1,6 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Gajraj+One&family=Poppins:ital,wght@0,900;1,500&family=Rubik+Doodle+Shadow&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Gajraj+One&family=Poppins:ital,wght@0,900;1,500&family=Rubik+Doodle+Shadow&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); */
 
 .cover{
     width: 100vw;
@@ -81,7 +81,7 @@
     & p{
         font-size: 14px;
         font-weight: 400;
-        font-family: Public Verdana, Geneva, Tahoma, sans-serif;
+        /* font-family: Public Verdana, Geneva, Tahoma, sans-serif; */
     /* background-color: var(--color-bg); */
 
         margin:10px ;
@@ -107,7 +107,7 @@
     min-width: 300px;
     margin: auto;
     color: black;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 .know-dep h1{

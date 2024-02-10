@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import Card from './Card'
+import Card from './Card.jsx'
 import hod from "../../assests/sbsingh.jpeg";
 import './professor.css'
 // import professorData from './professorData.json';
