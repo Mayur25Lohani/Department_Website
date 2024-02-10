@@ -2,7 +2,8 @@ import React, { useState,useEffect } from 'react'
 import Card from './card'
 import hod from "../../assests/sbsingh.jpeg";
 import './professor.css'
-import professorData from './professorData.json';
+// import professorData from './professorData.json';
+import Data from './professorData.js';
 
 
 
@@ -32,7 +33,7 @@ const Professor = () => {
     } 
   }
   
-  const screenWidth = window.innerWidth
+  // const screenWidth = window.innerWidth
   // const professorsPerPage = 6;
 
    // Number of professors to show per page
@@ -48,7 +49,7 @@ console.log(professorsPerPage)
 
   const startIndex = currentPage * professorsPerPage;
   const endIndex = startIndex + professorsPerPage;
-  const currentProfessors = professorData.slice(startIndex, endIndex);
+  const currentProfessors = Data.slice(startIndex, endIndex);
 
   return (
     <>
@@ -70,7 +71,7 @@ console.log(professorsPerPage)
           <button onClick={prevPage} disabled={currentPage === 0}>
           <i class="fa-solid fa-arrow-left"></i> Previous
           </button>
-          <button onClick={nextPage} disabled={endIndex >= professorData.length}>
+          <button onClick={nextPage} disabled={endIndex >= Data.length}>
             Next <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>

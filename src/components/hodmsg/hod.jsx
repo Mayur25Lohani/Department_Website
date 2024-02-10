@@ -4,6 +4,7 @@ import '../../index.css'
 
 import hod from "../../assests/sbsingh.jpeg";
 
+
 const Hod = () =>{
     return (
         <>

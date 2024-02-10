@@ -7,7 +7,7 @@
 
 .hod-info{
     display: flex;
-    gap: 3rem;
+    /* gap: 3rem; */
     margin: 10px;
     margin-top: 4rem;
 }
@@ -97,11 +97,11 @@
 .msg{
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
     padding: 2.5rem;
-    box-shadow: -3px 3px 10px black;
-    background-color:var(--para-bg);
+    /* box-shadow: -3px 3px 10px black; */
+    /* background-color:var(--para-bg); */
     text-align: left;
 }
 
@@ -143,11 +143,11 @@
 
 @media (width > 1159px){
     .msg{
-        width: 790px;
+        width: 857px;
         /* max-height: 390px; */
     }
     .hod-info{
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
         width: 90%;
     }
