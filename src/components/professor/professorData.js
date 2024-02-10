@@ -42,33 +42,41 @@ const Data =
         "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/2"
     },
     {
-        "img":ChandraSekharTiwary,
-        "name":"Chandra Sekhar Tiwary",
-        "contact":"+91-8078317531",
-        "mail":"chandra.tiwary@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/3"
+        "img":ShampaAich,
+        "name":"Shampa Aich",
+        "contact":"+91-3222-281750",
+        "mail":"saich@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/20"
     },
     {
-        "img":ChennaRaoBorra,
-        "name":"Chenna Rao Borra",
-        "contact":"+91-3222-283240",
-        "mail":"chenna.borra@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/4"
+        "img":ShivBratSingh,
+        "name":"Shiv Brat Singh",
+        "contact":"+91-3222-283290",
+        "mail":"sbs22@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/21"
     },
     {
-        "img":DebalayChakrabarti,
-        "name":"Debalay Chakrabarti",
-        "contact":"+91-3222-283282",
-        "mail":"debalay@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/5"
+        "img":ManasPaliwal,
+        "name":"Manas Paliwal",
+        "contact":"03222281760",
+        "mail":"manas.paliwal@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/31"
     },
     {
-        "img":GourGopalRoy,
-        "name":"Gour Gopal Roy",
-        "contact":"+91-3222-283276",
-        "mail":"ggroy@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/6"
+        "img":SiddharthaDas,
+        "name":"Siddhartha Das",
+        "contact":"+91-3222-283256",
+        "mail":"sdas@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/22"
     },
+    {
+        "img":SiddharthaRoy,
+        "name":"Siddhartha Roy",
+        "contact":"+91 3222 283270",
+        "mail":"siddhartha@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/23"
+    },
+    
     {
         "img":IndraniSen,
         "name":"Indrani Sen",
@@ -104,13 +112,7 @@ const Data =
         "mail":"k_biswas@metal.iitkgp.ac.in",
         "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/13"
     },
-    {
-        "img":ManasPaliwal,
-        "name":"Manas Paliwal",
-        "contact":"03222281760",
-        "mail":"manas.paliwal@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/31"
-    },
+    
     {
         "img":MangalRoy,
         "name":"Mangal Roy",
@@ -132,34 +134,7 @@ const Data =
         "mail":"sankha@metal.iitkgp.ac.in",
         "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/30"
     },
-    {
-        "img":ShampaAich,
-        "name":"Shampa Aich",
-        "contact":"+91-3222-281750",
-        "mail":"saich@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/20"
-    },
-    {
-        "img":ShivBratSingh,
-        "name":"Shiv Brat Singh",
-        "contact":"+91-3222-283290",
-        "mail":"sbs22@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/21"
-    },
-    {
-        "img":SiddharthaDas,
-        "name":"Siddhartha Das",
-        "contact":"+91-3222-283256",
-        "mail":"sdas@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/22"
-    },
-    {
-        "img":SiddharthaRoy,
-        "name":"Siddhartha Roy",
-        "contact":"+91 3222 283270",
-        "mail":"siddhartha@metal.iitkgp.ac.in",
-        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/23"
-    },
+    
     {
         "img":SomjeetBiswas,
         "name":"Somjeet Biswas",
@@ -204,6 +179,34 @@ const Data =
         "contact":"+91-3222-283296",
         "mail":"tkkundu@metal.iitkgp.ac.in",
         "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/29"
+    },
+    {
+        "img":ChandraSekharTiwary,
+        "name":"Chandra Sekhar Tiwary",
+        "contact":"+91-8078317531",
+        "mail":"chandra.tiwary@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/3"
+    },
+    {
+        "img":ChennaRaoBorra,
+        "name":"Chenna Rao Borra",
+        "contact":"+91-3222-283240",
+        "mail":"chenna.borra@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/4"
+    },
+    {
+        "img":DebalayChakrabarti,
+        "name":"Debalay Chakrabarti",
+        "contact":"+91-3222-283282",
+        "mail":"debalay@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/5"
+    },
+    {
+        "img":GourGopalRoy,
+        "name":"Gour Gopal Roy",
+        "contact":"+91-3222-283276",
+        "mail":"ggroy@metal.iitkgp.ac.in",
+        "link":"http://www.metal.iitkgp.ac.in/People/facultyDetails/6"
     }
   ]
 
