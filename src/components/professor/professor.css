@@ -1,0 +1,36 @@
+.show-cards{
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    grid-template-rows: repeat(2,min(500px)) /* Example of fixed and flexible row heights */
+}
+.professor{
+    & h1{
+        text-align: center;
+    }
+}
+.pagination-buttons{
+    margin-top: 1rem;
+    margin: auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    & button{
+        border: 2px solid black;
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+        color: black;
+        border-radius: 10px;
+        transition: all linear 0.2s;
+        &:hover{
+            scale: 1.05;
+        }
+    }
+}
+@media (width<1027px){
+    .show-cards{
+        grid-template-rows: repeat(3,min(500px)) /* Example of fixed and flexible row heights */
+    }
+}
