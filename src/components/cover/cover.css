@@ -1,10 +1,11 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Gajraj+One&family=Poppins:ital,wght@0,900;1,500&family=Rubik+Doodle+Shadow&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Foldit:wght@500&family=Gajraj+One&family=Poppins:ital,wght@0,900;1,500&family=Rubik+Doodle+Shadow&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); */
 
 .cover{
     width: 100vw;
     margin-top: 0;;
-    height: calc(98vh - 70px);
+    /* height: calc(98vh - 70px); */
     padding-top: 80px;
     
 }
@@ -13,89 +14,87 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 70px);
-    background: url('../../assests/coverpage/1.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: changephoto 16s ease 1s infinite;
-    position: relative;
+    top: 0;
+    /* background-color: black; */
+    z-index: -10;
+   
 }
 
 
-/* --------------------------------------------------------------------------- */
-/* Curve shape Start  */
 
-.custom-shape-divider-bottom-1703144822 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1703144822 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 137px;
-}
-
-.custom-shape-divider-bottom-1703144822 .shape-fill {
-    fill: var(--color-bg);
-}
-
-/* Curve Shape Ends  */
-
-/* --------------------------------------------------------------------------- */
 
 
 /* Department Content Start  */
 .dep-info{
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-items: center;
     align-items: center;
     margin-bottom: 3rem;
+    position: relative;
     flex-wrap: wrap;
+    /* height: 47vh; */
+    height: 70vh;
+    /* z-index: 1; */
+
 }
 .dep-content{
-    width: 40%;
+    width: 75%;
+    
     margin: auto;
     padding: .7rem 1.3rem;
     padding-top: 1rem;
+    position: absolute;
     border-radius: 5px;
-    background-color:var(--para-bg);
-    max-height: 23rem;
-    /* color: black; */
-    font-weight: 600;
+    /* max-height: 25rem; */
+    /* font-weight: 600; */
     letter-spacing: 1.1px;
     text-align: start;
     min-width: 300px;
-    overflow: hidden;
-    backdrop-filter: blur(7);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    /* cursor: pointer; */
+    /* background-color: var(--color-bg); */
+    background-image: url('../../assests/blob-scene-haikei\ \(1\).svg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+
+    /* overflow: hidden; */
+    left: 1rem;
+    top: 11rem;
+    /* backdrop-filter: blur(7); */
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+.dept-link{
+    & a{
+        color: rgb(248, 244, 244);
+        /* text-transform: lowercase; */
+        /* padding: 5px; */
+        /* text-decoration: underline; */
+        /* padding-top: 3rem; */
+        font-size: 12px;
+        margin-top: 5px;
+    }
 }
 .show-content{
     text-align: left;
+    /* background-color: var(--color-bg); */
+
     & p{
-        font-size: 15px;
-        padding-top:10px ;
-        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        /* font-family: Public Verdana, Geneva, Tahoma, sans-serif; */
+    /* background-color: var(--color-bg); */
+
+        margin:10px ;
+        margin-bottom: 10px;
         overflow-y: scroll;
-        max-height: 16rem;
-
-
+        /* max-height: 29rem; */
     }
 }
 
 .show-content p::selection {
     color: #e3bd99;
     background: #604022;
-    /* text-decoration: underline; */
     text-shadow: none;
   }
 
@@ -103,7 +102,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 100%;
+    position: absolute;
+    top: 1.8rem;
     min-width: 300px;
     margin: auto;
     color: black;
@@ -111,32 +112,77 @@
 }
 
 .know-dep h1{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    /* font-family: Roboto; */
     font-weight: 900;
-    font-family: Rubik+Doodle+Shadow;
     letter-spacing: 1.3px;
     word-spacing: 1.8px;
     border-radius: 10px;
-    background-image: url("../../assests/coverpage/2.webp") ;
-    background-size: contain;
-    background-position: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: changetxt 16s ease 1s infinite;
+    /* color: transparent; */
+    color: #fff;
+    -webkit-text-stroke: 1px  rgb(59, 61, 61);
+ 
 }
 
-/* .show-btn{
-    background-color: var(--color-bg);
-    border-radius: 8px;
-    cursor: pointer;
-    width: 8rem;
-    transition: all .4s ease;
-    
+.back-circle{
+    position: relative;
+    overflow-x: hidden;
+    /* background-color:rgb(86, 82, 82); */
+    height: 750px;
+    position: absolute;
+    top: 9%;
+    display: flex;
+    z-index: -9;
+    width: 100%;
+    transform: translate(-50% -50%);
+    right: 0;
+    & .cir1{
+        position: absolute;
+        right: 2rem;
+        top: 8rem;
+        background-color: #000;
+        filter: blur(60px);
+        height: 45%;
+        aspect-ratio: 1;
+        border-radius: 50% 20%;
+        transform: translate(30px, 20px);
+        opacity: .9;
+        animation: cir1 4s linear infinite alternate;
+
+        
+    }
+    & .cir2{
+        position: absolute;
+        background-color:#F5730A;
+        filter: blur(60px);
+        height: 45%;
+        right: 2rem;
+        top: 11rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        transform: translate(-50px, -50px);
+        opacity: .9;
+        animation: cir2 4s linear infinite alternate;
+
+
+
+    }
+    & .cir3{
+        position: absolute;
+        background-color:#871400;
+        filter: blur(60px);
+        height: 55%;
+        right: 2rem;
+        top: 7rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        opacity: .9;
+        animation: cir3 4s linear infinite alternate;
+
+    }
 }
-.show-btn:hover{
-    scale: 1.1;
-} */
+
+
 
                                      /* Responsive CSS  */
 
@@ -149,7 +195,10 @@
         width: 160%;
     }
     .dep-content{
-        max-height: 18rem;
+        /* max-height: 32rem; */
+        margin: auto;
+        top: 15rem;
+        width: 90%;
     }
     .know-dep h1{
         font-size: 2.7rem;
@@ -157,60 +206,109 @@
     .know-dep{
         width: 30%;
     }
+    .back-circle{
+        display: none;
+    }
+    .dep-info{
+        height: 102vh;
+    }
 }
 @media (width <= 400px){
     .cover{
         padding-top: 130px;
     }
     .dep-content{
-        width: 20%;
+        /* width: 85%; */
         text-align: center;
-        min-width: 260px;
+        min-width: 200px;
 
     }
+    .show-content p {
+        font-size: 12px;
+    }
+    .section-imgs{
+        /* height: 130%; */
+        position: relative;
+    }
 }
-
+@media (width > 871px){
+    .dep-info{
+        height: 47vh;
+    }
+}
+@media (width < 330px){
+    .dep-info{
+        height: 123vh
+    }
+}
                                 /* Responsive CSS Ends */
 
 
-                                /* Animation Start */
-
-@keyframes changephoto{
-    25%   {background-image:url('../../assests/coverpage/2.webp')}
-    50%  {background-image:url('../../assests/coverpage/3.webp')}
-    75% {background-image:url('../../assests/coverpage/4.webp')}
-    100% {background-image:url('../../assests/coverpage/1.webp')}
-}
-@keyframes changetxt{
-    25%   {background-image:url('../../assests/coverpage/2.webp')}
-    50%  {background-image:url('../../assests/coverpage/4.webp')}
-    75% {background-image:url('../../assests/coverpage/1.webp')}
-    100% {background-image:url('../../assests/coverpage/3.webp')}
-}
-/* Animation Ends  */
 
 
 
-.show-content p::-webkit-scrollbar {
-    width: 3px;
-}
 
-.show-content p::-webkit-scrollbar-track {
-    background: rgba(189, 183, 183, 0.659);
-    border-radius:10px ;
-}
-
-.show-content p::-webkit-scrollbar-thumb {
-      border-radius:10px ;
-    background: #555;
-
-  }
   
-  .show-content p::-webkit-scrollbar-thumb:hover {
-    background: #1a1918;
+  /* --------------------------------------------------------------------------- */
+/* Curve shape Start  */
 
-  }
-  
+.custom-shape-divider-bottom-1703144822 {
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1703144822 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+}
+
+.custom-shape-divider-bottom-1703144822 .shape-fill {
+    /* fill: var(--color-bg); */
+    fill: aqua;
+}
+
+/* Curve Shape Ends  */
+
+/* --------------------------------------------------------------------------- */
+
+
+
+                                    /* Animation  */
+
+@keyframes cir1 {
+    from{
+
+        transform: translate(30px, 20px);
+    }
+    to{
+        transform: translate(100px, -60px);
+    }
+}
+@keyframes cir2 {
+    from{
+
+        transform: translate(-50px, -50px);
+    }
+    to{
+        transform: translate(-130px, 40px);
+    }
+}
+@keyframes cir3 {
+    from{
+
+        transform: translate(0, 40px);
+    }
+    to{
+        transform: translate(20px, -40px);
+        /* background-color: rgb(255, 132, 0); */
+    }
+}
 
   

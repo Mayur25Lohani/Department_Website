@@ -3,6 +3,7 @@ import './nav.css';
 
 import Logo from '../../assests/iitkgplogo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaTimes } from "react-icons/fa";
 
 const Nav = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -11,23 +12,25 @@ const Nav = () => {
   return (
     <nav>
       <div className="logo">
-        <img src={Logo} alt="Logo" />
+        <a href="#">
+          <img src={Logo} alt="Logo" />
+        </a>
       </div>
       <div className="name">
         <h2> Metallurgical and Materials Engineering Department </h2>
       </div>
-      <div className={showLinks ? "links active" : "links"}>
+      <div className={showLinks ? "links active" : "links"} id='links'>
         <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} >
           About
         </a>
-        <a href="#professors" onClick={() => setActiveNav('#professors')} className={activeNav === '#about' ? 'active' : ''}>
+        <a href="#sme" onClick={() => setActiveNav('#sme')} className={activeNav === '#sme' ? 'active' : ''}>
+          SME
+        </a>
+        <a href="#professors" onClick={() => setActiveNav('#professors')} className={activeNav === '#professors' ? 'active' : ''}>
           Professors
         </a>
-        <a href="#resources" onClick={() => setActiveNav('#resources')} className={activeNav === '#experience' ? 'active' : ''}>
+        <a href="#resources" onClick={() => setActiveNav('#resources')} className={activeNav === '#resources' ? 'active' : ''}>
           Resources
-        </a>
-        <a href="#sme" onClick={() => setActiveNav('#sme')} className={activeNav === '#services' ? 'active' : ''}>
-          SME
         </a>
         <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}>
           Contact
@@ -35,12 +38,13 @@ const Nav = () => {
         
       </div>
       <div className="hamburger-menu">
-        <a href="#" onClick={() => setShowLinks(!showLinks)}>
-          <GiHamburgerMenu />
+        <a onClick={() => setShowLinks(!showLinks)} style={{cursor:'pointer'}}>
+        {showLinks ? <FaTimes /> : <GiHamburgerMenu />}
         </a>
       </div>
     </nav>
   );
 };
+
 
 export default Nav;

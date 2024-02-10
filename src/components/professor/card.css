@@ -1,31 +1,92 @@
-.profs-card{
-    padding: 2rem 1.5rem;
-    border-radius: 10px;
-    background-color: rgb(243, 240, 244);
-    color: black;
-}
-.profs-card:hover{
-    box-shadow: 1px 1px 8px 8px rgb(136, 146, 166);
-}
-
-.card{
+.hodcard1{
+    border: 1px solid black;
+    padding: 5px;
+    min-width: 18rem;
+    max-width: 292px;
+    height: 357px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5730A;
+    box-shadow: 3px 3px 10px black;
+    transition: all .8s ease ;
+
+}
+.mailid a{
+    font-size: .8rem;
+    color: #fff;
+}
+.hodcard1::after{
+    content: " ";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all .8s ease ;
+
+}
+.hod-cnt1{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(#F5730A, #871400);
+    bottom: 0;
+    height: 110px;
+    bottom: -100%;
+    /* line-height: 5px; */
+    transition: all .8s ease ;
+    color: white !important;
+    padding-top: 5px;
+    padding-bottom: 25px;
 }
 
-.cardImg{
-    height: 200px;
-    width: 150px;
+.hod-cnt1 .btn a {
+    color: #fff;
+}
+
+.hod-cnt1 .btn a:hover{
+    color: #F5730A;
+}
+
+
+.hod-img1{
     border-radius: 50%;
-    object-fit: cover;
+    border: 5px solid #871400;
+    
+    position: absolute;
+    top: 40px;
+    overflow: hidden;
+    aspect-ratio: 1;
+    width: 80%;
+    transition: all .8s ease ;
+
+}
+.hodcard1:hover .hod-img1{  
+    box-shadow: 0 0 0 15rem #871400;
+    border: 10px solid #F5730A;
+   
+}
+.hodcard1:hover{
+    height: 460px;
+    & .hod-cnt1{
+        bottom: 0;
+    }
+    &::after{
+        top: 0;
+    }
 }
 
-.title{
-    color: rgb(28, 8, 81);
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px 5px
+.hod-name1{
+    position: absolute;
+    top: 282px;
+    font-weight: 600;
 }

@@ -1,5 +1,5 @@
 footer {
-  background: var(--color-primary);
+  background: #871400;
   margin-top: 6.5rem;
   text-align: center;
   font-size: 17px;
@@ -17,7 +17,7 @@ footer {
 }
 
 h3 {
-  color: var(--color-bg-variant);
+  color: #F5730A;
   font-weight: 600;
 }
 
@@ -40,7 +40,7 @@ h3 {
   display: block;
   height: 2px;
   position: absolute;
-  background: var(--color-bg-variant);
+  background: #F5730A;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
   border-radius: 6px;
@@ -48,22 +48,23 @@ h3 {
 
 .grid-item .effect:hover:after {
   width: 100%;
-  background-color: var(--color-bg);
+  background-color: #fff;
 }
 
 .copyright {
   font-size: 16px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 input[type="email"] {
   font-size: 14px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 .grid-item button {
-  background-color: #209702;
+  background-color: #F5730A;
   color: #ffffff;
   padding: 10px 20px;
   border: none;
@@ -72,7 +73,8 @@ input[type="email"] {
 }
 
 .grid-item button:hover {
-  background-color: var(--color-bg-variant);
+  background-color: #fff;
+  color: #F5730A;
 }
 
 .footer__socials{
@@ -83,7 +85,7 @@ input[type="email"] {
 }
 
 .footer__socials a {
-    background: #209702;
+    background: #F5730A;
     color: var(--color-white);
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -93,12 +95,12 @@ input[type="email"] {
 
 .footer__socials a:hover {
     background: transparent;
-    color: var(--color-bg-variant);
-    border-color: var(--color-bg-variant);
+    color: #F5730A;
+    border-color: #fff;
 }
 
 .underline {
-  border-bottom: 1px solid var(--color-bg-variant);
+  border-bottom: 1px solid #F5730A;
   margin: 20px 0;
 }
 
@@ -119,7 +121,7 @@ input[type="email"] {
 }
 
 .wave .shape-fill {
-  fill: #12343b;
+  fill: #F5730A;
 }
 
 /* Media queries for responsiveness */

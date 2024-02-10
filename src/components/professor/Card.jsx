@@ -1,25 +1,26 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+// import '../hodmsg/hod.css'
 import './card.css'
-
-
-function Cards(props) {
-    return (
-        <div className='profs-card'>
-            <Card className="card" style={{ width: '18rem' }}>
-                <Card.Img className='cardImg' variant="top" src={props.photo}/>
-                <Card.Body>
-                    <Card.Title className='title'>{props.name}</Card.Title>
-                    <Card.Text>
-                        {props.details}
-                    </Card.Text><br/>
-                    <Button variant="primary"><a href={props.link} target="_blank">Know More</a></Button>
-                </Card.Body>
-            </Card>
-        </div>
-
-    );
+const Card = (props) => {
+  return (
+    <div>
+      <div className="hodcard1">
+                    <div className="hod-img1">
+                        <img src={props.img}  alt="" />
+                    </div>
+                    <div className="hod-name1">
+                        <p>
+                        {props.name}
+                        </p>
+                    </div>
+                    <div className="hod-cnt1">
+                    <p><i className="fa-solid fa-phone"></i> :  {props.contact}</p>
+                            <p className='mailid'><a href = {`mailto: ${props.mail}`} target='__blank'><i className="fa-solid fa-envelope"></i> : {props.mail}</a></p>
+                            <button className="btn btn-primary" role="button"><a href={`${props.link}`} target='__blank'>Know More</a></button>
+                    </div>
+                </div>
+    </div>
+  )
 }
 
-export default Cards;
+export default Card

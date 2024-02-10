@@ -3,7 +3,7 @@ nav {
     display: grid;
     grid-template-columns: auto auto 1fr auto;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.563);
     padding: 0.7rem 1.7rem;
     position: fixed;
     top:0;
@@ -36,7 +36,7 @@ nav {
   .links a {
     padding: 0.9rem;
     margin-right: 10px;
-    color: var(--color-light);
+    color: #fff;
     font-size: 1rem;
     text-decoration: none;
   }
@@ -71,19 +71,13 @@ nav {
   .links a:hover:after { 
     width: 90%; 
     left: 10%;
-    background-color:var(--color-primary);
+    background-color: #871400;
   }
   .links a.active{
-    color:var(--color-primary);
+    color: #F5730A;
     font-weight: bolder;
-    /* text-shadow: 0 .8px 9px var(--color-light); */
-    /* &::after{ */
-      /* width: 90%; */
-      /* left:10%; */
-      /* background-color:var(--color-primary); */
-    /* } */
   }
-   /* Hover Effect Ends  */
+   
   
  
 

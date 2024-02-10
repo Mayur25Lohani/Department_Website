@@ -5,8 +5,8 @@ import Footer from './components/footer/Footer'
 import Resources from './components/resources/Resources'
 import Contact from './components/contact/Contact'
 import Hod from './components/hodmsg/hod'
+import Professor from './components/professor/professor'
 
-import Profs from './components/professor/Profs'
 
 import SME from './components/about_SME/SME'
 
@@ -18,8 +18,7 @@ const App = () => {
     <Cover/>
     <Hod/>
     <SME/>
-    <Profs/>
-
+    <Professor/>
     <Resources />
     <Contact />
     <Footer />

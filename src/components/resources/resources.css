@@ -1,7 +1,7 @@
 .head2 {
     font-size: 30px;
     font-weight: 600;
-    color: var(--color-primary);
+    color: #fff;
 }
 .resources__container {
   display: grid;
@@ -10,7 +10,7 @@
 }
 
 .resources__item {
-  background: var(--color-bg-variant);
+  background: #871400;
   padding: 1.5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -19,7 +19,7 @@
 
 
 .resources__item:hover {
-  border-color: var(--color-primary-varient);
+  border-color: #fff;
   background: transparent;
 }
 
@@ -30,7 +30,7 @@
 
 .resources__item h3 {
   margin: 1.2rem 0 2rem;
-  color: var(--color-primary);
+  color: #fff;
   text-align: center;
 }
 

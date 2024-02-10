@@ -4,7 +4,7 @@ import "./resources.css";
 
 import IMG1 from "../../assests/resources/comp.jpg";
 import IMG2 from "../../assests/resources/birc.jpg";
-import IMG3 from "../../assests/resources/form.png";
+import IMG3 from "../../assests/resources/form.jpg";
 import IMG4 from "../../assests/resources/book.jpg";
 
 const data = [
