@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from 'react'
-import Card from './card'
+import Card from './Card'
 import hod from "../../assests/sbsingh.jpeg";
 import './professor.css'
 // import professorData from './professorData.json';
@@ -53,7 +53,7 @@ console.log(professorsPerPage)
 
   return (
     <>
-      <div className="professor">
+      <section className="professor" id="professors">
         <h1>Professors</h1>
         <div className="show-cards">
           {currentProfessors.map((professor, index) => (
@@ -75,7 +75,7 @@ console.log(professorsPerPage)
             Next <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
-      </div>
+      </section>
     </>
   );
 };

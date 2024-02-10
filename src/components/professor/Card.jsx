@@ -16,7 +16,7 @@ const Card = (props) => {
                     <div className="hod-cnt1">
                     <p><i className="fa-solid fa-phone"></i> :  {props.contact}</p>
                             <p className='mailid'><a href = {`mailto: ${props.mail}`} target='__blank'><i className="fa-solid fa-envelope"></i> : {props.mail}</a></p>
-                            <button className="button-30" role="button"><a href={`${props.link}`} target='__blank'>Know More</a></button>
+                            <button className="btn btn-primary" role="button"><a href={`${props.link}`} target='__blank'>Know More</a></button>
                     </div>
                 </div>
     </div>

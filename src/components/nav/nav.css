@@ -36,7 +36,7 @@ nav {
   .links a {
     padding: 0.9rem;
     margin-right: 10px;
-    color: var(--color-light);
+    color: #fff;
     font-size: 1rem;
     text-decoration: none;
   }
@@ -71,10 +71,10 @@ nav {
   .links a:hover:after { 
     width: 90%; 
     left: 10%;
-    background-color:var(--color-primary);
+    background-color: #871400;
   }
   .links a.active{
-    color:var(--color-primary);
+    color: #F5730A;
     font-weight: bolder;
   }
    

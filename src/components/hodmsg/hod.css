@@ -1,15 +1,21 @@
 .hod-container{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    background-image: url('../../assests/blob-scene-haikei\ \(2\).svg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 2rem;
 }
 
 .hod-info{
     display: flex;
     /* gap: 3rem; */
     margin: 10px;
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
 }
 
 .heading{
@@ -28,7 +34,7 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255 255 255 / 56%);
+    background-color: #F5730A;
     box-shadow: 3px 3px 10px black;
     transition: all .8s ease ;
 
@@ -53,7 +59,7 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: rgb(72, 75, 240);
+    background-image: linear-gradient(#F5730A, #871400);
     bottom: 0;
     height: 110px;
     bottom: -100%;
@@ -62,10 +68,18 @@
     color: white !important;
 }
 
+.hod-cnt .btn a {
+    color: #fff;
+}
+
+.hod-cnt .btn a:hover{
+    color: #F5730A;
+}
+
 
 .hod-img{
     border-radius: 50%;
-    border: 8px solid rgb(73 74 109);
+    border: 5px solid #871400;
     
     position: absolute;
     top: 40px;
@@ -75,8 +89,8 @@
     transition: all .8s ease ;
 }
 .hodcard:hover .hod-img{  
-    box-shadow: 0 0 0 15rem rgb(5, 78, 188);
-    border: 20px solid rgb(72, 75, 240)
+    box-shadow: 0 0 0 15rem #871400;
+    border: 10px solid #F5730A;
 }
 .hodcard:hover{
     height: 430px;
@@ -96,7 +110,7 @@
 
 .msg{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* border: 1px solid black; */
     border-radius: 5px;
     padding: 2.5rem;
@@ -113,19 +127,24 @@
     .hod-info{
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    .msg{
+        padding: 0;
+        padding-bottom: 2rem;
     }
 }
 @media (width < 600px){
     .msg p{
-        max-height: 600px;
-        overflow-y: scroll;
-        padding-top:10px ;
-        &::-webkit-scrollbar {
+        /* max-height: 600px; */
+        /* overflow-y: scroll; */
+        padding-top:5px ;
+        /* &::-webkit-scrollbar {
             width: 3px;
             margin-left: 10px;
-        }
+        } */
         
-        &::-webkit-scrollbar-track {
+        /* &::-webkit-scrollbar-track {
             background: rgba(189, 183, 183, 0.659);
             border-radius:10px ;
         }
@@ -137,19 +156,19 @@
           
           &::-webkit-scrollbar-thumb:hover {
             background: #555;
-          }
+          } */
     }
 }
 
 @media (width > 1159px){
     .msg{
-        width: 857px;
+        width: 100%;
         /* max-height: 390px; */
     }
     .hod-info{
         /* justify-content: space-between; */
         align-items: center;
-        width: 90%;
+        width: 100%;
     }
 }
 
